@@ -1,0 +1,15 @@
+#post-wrapper{
+    background-color: darkorange;
+    margin: 10px 100px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#read-more{
+    text-decoration: none;
+}
+#post-wrapper img{
+    width: 95%;
+    height: 300px;
+    border: 1px solid white;
+}

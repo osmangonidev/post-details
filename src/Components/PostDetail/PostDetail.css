@@ -1,0 +1,14 @@
+#post-detail-wrapper{
+    background-color:wheat;
+    margin: 20px 40px;
+    border-radius: 15px;
+    padding: 15px;
+}
+.inline{
+    display: inline-block;
+}
+#back-icon{
+    position: relative;
+    left: -300px;
+    top: -20px;
+}
