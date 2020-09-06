@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Button } from '@material-ui/core';
+import { Button, Box } from '@material-ui/core';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import "./PostDetail.css"
 import Comments from '../Comments/Comments';
@@ -27,7 +27,7 @@ const PostDetail = () => {
     
     const [display,setDisplay]=useState(false);
     function toggle(){
-        if(display==false){
+        if(display===false){
             setDisplay(true)
         }
         else{
@@ -42,15 +42,16 @@ const PostDetail = () => {
         <div>
             <div id="post-detail-wrapper">
                 <Link to='/'><ArrowBackIcon id='back-icon'></ArrowBackIcon></Link>
-                <h2 style={{display:'inline-block', marginRight:'200px'}}><span>User Id:</span> {post.userId} </h2>
-                <h2 style={{display:'inline-block', marginLeft:'200px'}}><span>Post Id:</span> {post.id} </h2>
-                <h2><span>Title:</span> {post.title}</h2>
-                <h2><span>Text:</span> {post.body} </h2>
-                <Button onClick={ toggle} variant="outlined" color="primary" >Click me to Show Comments</Button>
+                <Box className="id" style={{display:'inline-block', marginRight:'200px'}} color='text.primary'><span className='highlight'>User Id:</span> {post.userId} </Box>
+                <Box className="id"  style={{display:'inline-block', marginLeft:'200px'}} color='text.primary'><span className='highlight'>Post Id:</span> {post.id} </Box>
+                <Box id='title' ><span className='highlight' color='text.primary'>Title: </span> {post.title} </Box>
+                <Box id='description' color="text.secondary"> <span className='highlight'>Body:</span>  {post.body}</Box>
+                <Button onClick={ toggle} variant="outlined" color="text.primary" >Click me to Show Comments</Button>
             </div>
             {display && <div id='comments-wrapper'> {comments.map(item=><Comments comment={item}></Comments>)}</div>}
         </div>
     );
 };
+
 
 export default PostDetail;

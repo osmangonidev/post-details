@@ -4,6 +4,7 @@ import './Posts.css'
 import Box from '@material-ui/core/Box';
 import { Button } from '@material-ui/core';
 
+
 const Posts = (props) => {
     const post=props.post
     let count=0;
@@ -22,10 +23,10 @@ const Posts = (props) => {
     console.log(picture.length,post.id)
     return (
         <div id="post-wrapper">
-            <Box color="info.main"><h2>{capitalizeFirstLetter(post.title)}</h2></Box>
             <img src={url} />
-            <Box color="text.secondary"><h4> {post.body} </h4></Box>
-            <Link to={`/post/${post.id}`} id="read-more"><Button variant="outlined" color="primary">Read more</Button></Link>
+            <Box color="info.main"><h2>{capitalizeFirstLetter(post.title)}</h2></Box>
+            <Box color="text.secondary"><h4> {capitalizeFirstLetter(post.body)} </h4></Box>
+            <Link to={`/post/${post.id}`} id='read-more' ><Button id="read-btn" variant="outlined" color="primary">Read more</Button></Link>
         </div>
     );
 };

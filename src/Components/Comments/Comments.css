@@ -7,10 +7,31 @@
     border: 1px solid wheat;
     box-shadow: 5px 5px 5px gray;
     margin-left:150px ;
+    font-style: italic;
 }
 #img-wrapper img{
     margin-right: 15px;
     margin: 10px;
     border: 2px solid wheat;
     border-radius: 50%;
+}
+#comment-section h3{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin: 5px;
+    word-spacing: 1px;
+    letter-spacing: 0.8px;
+}
+#comment-section h4{
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 5px;
+    margin: 5px;
+    word-spacing: 1px;
+    letter-spacing: 0.8px;
+    font-weight: 300;
+}
+.text-highlight{
+    color:rgb(160, 90, 125);
 }

@@ -10,5 +10,24 @@
 #back-icon{
     position: relative;
     left: -300px;
-    top: -20px;
+    top: -5px;
+}
+.id,#title{
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    word-spacing: 1px;
+    letter-spacing: 0.8px;
+}
+
+#description{
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+    word-spacing: 1px;
+    letter-spacing: 0.8px;
+}
+
+.highlight{
+    color: rgb(201, 121, 161);
 }

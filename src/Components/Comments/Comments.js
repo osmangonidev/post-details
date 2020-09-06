@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Comments.css';
+import './Comments.css'
 
 const Comments = (props) => {
     const comment=props.comment;
@@ -24,9 +24,9 @@ const Comments = (props) => {
                 {<img src={url} alt=""/>}
             </div>
             <div id='description-wrapper'>
-                <h3>Title: {commentTitle}</h3>
-                <h4>Comment: {body}</h4>
-                <h4>Email: {email}</h4>
+                <h3><span className="text-highlight">Title:</span>  {commentTitle}</h3>
+                <h4><span className="text-highlight">Comment: </span> {body}</h4>
+                <h4><span className="text-highlight">Email: </span> {email}</h4>
             </div>
         </div>
     );
